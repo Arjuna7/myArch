@@ -196,7 +196,7 @@ echo "--               GUI                --"
 echo "--------------------------------------"
 pacman -S xorg-Server xf86-video-intel libgl mesa nvidia-lts nvidia-libgl xorg-xinit xorg-xrandr xorg-xsetroot firefox nitrogen picom --noconfirm --needed
 cp /etc/X11/xinit/xinitrc .xinitrc
-pacman -S wget --noconfirm --needed
+pacman -S wget intel-ucode --noconfirm --needed
 
 
 #-----------------------------------------------------
