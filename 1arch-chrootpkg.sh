@@ -12,3 +12,6 @@ echo "--------------------------------------"
 echo "--          Network Setup           --"
 echo "--------------------------------------"
 pacman -S networkmanager wpa_supplicant wireless_tools netctl --noconfirm --needed
+
+
+pacman -S grub efibootmgr dosfstools os-prober --noconfirm --needed
