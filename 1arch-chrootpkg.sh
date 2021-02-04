@@ -7,7 +7,7 @@ pacman -S linux linux-headers linux-lts linux-lts-headers --noconfirm --needed
 echo "--------------------------------------"
 echo "--  text editor,othet packages      --"
 echo "--------------------------------------"
-pacman -S vim openssh base-devel nano sudo dialog --noconfirm --needed
+pacman -S vim openssh base-devel sudo dialog --noconfirm --needed
 echo "--------------------------------------"
 echo "--          Network Setup           --"
 echo "--------------------------------------"
