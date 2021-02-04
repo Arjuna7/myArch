@@ -152,7 +152,7 @@ ${password}
 ${password}
 EOF_rpasswd
 
-useradd -m -g user -G wheel ${username}
+useradd -m -g users -G wheel ${username}
 passwd ${username} << EOF_upasswd
 ${password}
 ${password}
