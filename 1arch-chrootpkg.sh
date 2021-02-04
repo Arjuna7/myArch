@@ -15,3 +15,8 @@ pacman -S networkmanager wpa_supplicant wireless_tools netctl --noconfirm --need
 
 
 pacman -S grub efibootmgr dosfstools os-prober --noconfirm --needed
+
+
+pacman -S xorg-Server xf86-video-intel libgl mesa nvidia-lts nvidia-libgl xorg-xinit xorg-xrandr xorg-xsetroot firefox nitrogen picom --noconfirm --needed
+
+pacman -S wget intel-ucode --noconfirm --needed
