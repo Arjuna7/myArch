@@ -96,7 +96,7 @@ mkdir /mnt/Home
 mount -t ext4 "${Disk}2" /mnt/Home/
 mkdir /mnt/etc
 genfstab -U -p /mnt >> /mnt/etc/fstab
-cat /mnt/etc/fstab
+
 #--------------------------------------------------------------------------------
 
 echo "--------------------------------------"
@@ -104,4 +104,5 @@ echo "---Arch Install on Main Drive---------"
 echo "--------------------------------------"
 pacstrap -i /mnt base git nano glibc --noconfirm --needed
 
-
+mount
+cat /mnt/etc/fstab
