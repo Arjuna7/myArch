@@ -92,8 +92,8 @@ mount -t ext4 "${DISK}2" /mnt
 mkdir /mnt/boot
 mkdir /mnt/boot/EFI
 mount -t vfat "${DISK}1" /mnt/boot/EFI
-mkdir /mnt/Home
-mount -t ext4 "${Disk}2" /mnt/Home/
+mkdir /mnt/home
+mount -t ext4 "${Disk}2" /mnt/home/
 mkdir /mnt/etc
 genfstab -U -p /mnt >> /mnt/etc/fstab
 
@@ -102,7 +102,7 @@ genfstab -U -p /mnt >> /mnt/etc/fstab
 echo "--------------------------------------"
 echo "---Arch Install on Main Drive---------"
 echo "--------------------------------------"
-pacstrap -i /mnt base git nano glibc --noconfirm --needed
+pacstrap -i /mnt base git nano linux-firmware glibc --noconfirm --needed
 
 mount
 cat /mnt/etc/fstab
