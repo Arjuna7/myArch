@@ -91,7 +91,7 @@ mkdir /mnt
 mount -t ext4 "${DISK}2" /mnt
 mkdir /mnt/boot
 mkdir /mnt/boot/EFI
-mount -t vfat "${DISK}1" /mnt/boot/
+mount -t vfat "${DISK}1" /mnt/boot/EFI
 mkdir /mnt/Home
 mount -t ext4 "${Disk}2" /mnt/Home/
 mkdir /mnt/etc
@@ -102,8 +102,6 @@ cat /mnt/etc/fstab
 echo "--------------------------------------"
 echo "---Arch Install on Main Drive---------"
 echo "--------------------------------------"
-pacstrap -i /mnt base --noconfirm --needed
+pacstrap -i /mnt base git nano glibc --noconfirm --needed
 
-git clone /mnt https://github.com/Arjuna7/myArch
 
-arch-chroot /mnt
