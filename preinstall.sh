@@ -103,7 +103,7 @@ echo "--------------------------------------"
 echo "---Arch Install on Main Drive---------"
 echo "--------------------------------------"
 pacstrap -i /mnt base --noconfirm --needed
-arch-root /mnt
+arch-chroot /mnt
 #----------------------------------------------------------------------------------
 echo "-------------------------------------------------"
 echo "       Setup Language to US and set locale       "
