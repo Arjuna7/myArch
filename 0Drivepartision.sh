@@ -98,4 +98,7 @@ echo "--------------------------------------"
 echo "---Arch Install on Main Drive---------"
 echo "--------------------------------------"
 pacstrap -i /mnt base --noconfirm --needed
+
+git clone /mnt https://github.com/Arjuna7/myArch
+
 arch-chroot /mnt
